@@ -9,12 +9,12 @@
 </head>
 
 <body class="bg-[#DECF83] bg-opacity-[37%] p-0 m-0 ">
-    <div class="conatiner ">
+    <div class="conatiner h-auto w-auto ">
 
         <nav>
             <ul class="flex justify-evenly h-12  items-center  mt-1">
                 <li><img src="./images/logo.png" class="w-12" alt="logo"></li>
-                <li class="w-[75%] bg-white rounded-lg  py-2   hover:border-2 border-yellow-300 ">
+                <li class="w-[75%] max-w-[75%] bg-white rounded-lg py-2 hover:border-2 ">
                     <div class="flex justify-center items-center ">
                         <input type="text" placeholder="Search among 1000+ music track" class="w-[90%] outline-none ">
                         <img src="./images/search (2).png" alt="search" class="h-6 cursor-pointer">
@@ -23,6 +23,7 @@
                 <li><img src="./images/menu.png" alt="menubar" class="h-9 cursor-pointer"></li>
             </ul>
         </nav>
+
         <curousal>
             <div class="image-frame h-[224px] w-[94%] mt-2 ml-5 flex"
                 style="background-image: url('./images/bg-yellow.png')">
@@ -59,76 +60,111 @@
             </div>
         </curousal>
 
-        <div class="top-tracks mx-4 mt-2">
+        <div class="weekly-tracks mx-4 mt-2">
             <h2 class="font-bold text-2xl">Weekly Top Tracks </h2>
-            <div class="songs flex ">
-                <div class="h-[9rem] w-[7.5rem] bg-white mt-2 hover:bg-black hover:text-white ">
-                    <img src="./images/image 1.png" alt="image1" class="absolute ml-3 mt-2 ">
-                    <img src="./images/play.png" alt=""
-                        class="h-8 p-1 bg-white relative hover:bg-yellow-300 left-16 top-16">
-                    <p class="relative top-[5rem] ml-6 font-bold">Just Hits</p>
-                </div>
-                <div class="h-[9rem] w-[7.5rem] bg-white mt-2 hover:bg-black hover:text-white ">
-                    <img src="./images/Rectangle 10.png" alt="image1" class="absolute ml-3 mt-2 ">
-                    <img src="./images/play.png" alt="" class="h-8 p-1 bg-white relative left-16 top-16">
-                    <p class="relative top-[5rem] ml-6 ">Hit Radio</p>
-                </div>
-                <div class="h-[9rem] w-[7.5rem] bg-white mt-2 hover:bg-black hover:text-white ">
-                    <img src="./images/image 2.png" alt="image1" class="absolute ml-3 mt-2 ">
-                    <img src="./images/play.png" alt="" class="h-8 p-1 bg-white relative left-16 top-16">
-                    <p class="relative top-[5rem] ml-5 ">Hit Rewind</p>
-                </div>
-                <div class="h-[9rem] w-[7.5rem] bg-white mt-2 hover:bg-black hover:text-white ">
-                    <img src="./images/image 4.png" alt="image1" class="absolute ml-3 mt-2 ">
-                    <img src="./images/play.png" alt=""
-                        class="h-8 p-1 bg-white hover:bg-yellow-300 relative left-16 top-16">
-                    <p class="relative top-[5rem] ml-5 ">Maroon 5</p>
-                </div>
-                <div class="h-[9rem] w-[7.5rem] bg-white mt-2 hover:bg-black hover:text-white ">
-                    <img src="./images/image 7.png" alt="image1" class="absolute ml-3 mt-2 ">
-                    <img src="./images/play.png" alt=""
-                        class="h-8 p-1 bg-white hover:bg-yellow-300 relative left-16 top-16">
-                    <p class="relative top-[5rem] ml-8 ">A.L.A </p>
-                </div>
-
+            <div class="songs flex mt-2 overflow-auto">
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/image 1.png" alt="track1" class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Just hits</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song2 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/honeysingh.cms" alt="track1 " class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Honey singh</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/image 4.png" alt="track1" class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Maroon</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/Vishal.jpg" alt="track1 " class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Vishal hits</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/arijitsingh.webp" alt="track1" class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Arijit Rewind</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/Pawan-Singh.jpg" alt="track1 " class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Power Star</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/modi.avif" alt="track1" class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center font-bold">Moj Modi</p>
+                 </div>
+               </div>
+               <div>
+                 <div class="song1 max-w-[100%] w-[8rem] p-4 h-auto bg-white ">
+                    <img src="./images/Mashups.jpg" alt="track1 " class="w-[100px] h-[100px]">
+                    <img src="./images/play.png" alt="pause" class="max-w-[100%] w-8  ml-14 -mt-9 align-top cursor-pointer">
+                    <p class="text-sm  p-1 text-center">Mausup</p>
+                 </div>
+               </div>
             </div>
-            <div class="top-tracks  mt-1">
+
+            <div class="recent-played mt-1">
                 <h2 class="font-bold text-2xl">Recent Played </h2>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                
+                <div class="songs flex mt-2 overflow-auto gap-2">
+               <div>
+                 <div class="song1 max-w-[100%] w-[11rem] p-3 h-auto bg-white rounded-lg">
+                    <img src="./images/khanniSuno.jpg" alt="track1" class="w-[160px] h-[110px] rounded-lg">
+                    <img src="./images/yellow-icon.png" alt="pause" class="max-w-[100%] w-8  ml-16 -mt-10 align-top cursor-pointer">
+                    <p class="text-lg  p-3 text-center font-bold">Khaani Suno</p>
+                 </div>
+               </div>
+                 <div class="song1 max-w-[100%] w-[11rem] p-3 h-auto bg-white rounded-lg">
+                    <img src="./images/sajniRe.jpg" alt="track1" class="w-[160px] h-[110px] rounded-lg">
+                    <img src="./images/yellow-icon.png" alt="pause" class="max-w-[100%] w-8  ml-16 -mt-10 align-top cursor-pointer">
+                    <p class="text-lg mt-3 text-center font-bold">Sajani Re</p>
+                 </div>
+               </div>
+               <div>
 
             </div>
-
-
         </div>
 
+    </div>
 
-        <div class="songsplayer sticky flex items-center justify-between  h-14 bottom-0 bg-[#242424]">
-          <img src="./images/image 1.png" alt="" class="h-9 ml-4"> 
-          <div class="mr-16">
-            <p class="text-yellow-700 text-sm">Let me love you</p>
+    <div class="songsplayer fixed flex items-center justify-between  h-14 bottom-0 w-[100%] bg-[#242424]">
+
+        <img src="./images/image 1.png" alt="" class="h-9 ml-4">
+        <div class="mr-16">
+            <p class="text-yellow-700 text-sm inline">Letlove you</p>
             <p class="text-white text-[0.6rem]">Dua Lipa</p>
-          </div>
-         <img src="./images/pausegold.png" alt="" class="h-7 cursor-pointer">
-         <div class=" flex items-center gap-2 w-1/2">
-         <p class="text-[0.6rem] text-yellow-600">0:12</p>
-         <input type="range" class=" h-1 w-3/4" >
-         <p class="text-[0.6rem] text-yellow-600">3:12</p>
-
-        </div>
-         <input type="range" class="w-1/6 h-1 mr-4 " >
-        </div>
         </div>
 
+        <img src="./images/pausegold.png" alt="" class="h-7 cursor-pointer">
 
+        <div class=" flex items-center gap-2 w-1/2">
+            <p class="text-[0.6rem] text-yellow-600">0:12</p>
+            <input type="range" class=" h-1 w-3/4">
+            <p class="text-[0.6rem] text-yellow-600">3:12</p>
+        </div>
+
+        <input type="range" class="w-1/6 h-1 mr-4 ">
+    </div>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
