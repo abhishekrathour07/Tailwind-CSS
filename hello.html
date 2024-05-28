@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Popular Artists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #000;
+            height: 100vh;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            color: white;
+        }
+        .sidebar a {
+            color: gray;
+            text-decoration: none;
+            display: block;
+            margin: 20px 0;
+        }
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #1db954;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+            flex: 1;
+        }
+        .popular-artists {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .artist {
+            text-align: center;
+            margin: 20px;
+            flex-basis: calc(25% - 40px);
+            box-sizing: border-box;
+        }
+        .artist img {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 200px;
+            }
+            .main-content {
+                margin-left: 220px;
+            }
+            .artist {
+                flex-basis: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            .main-content {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            .artist {
+                flex-basis: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Spotify</h2>
+        <a href="#">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Your Library</a>
+        <button>Create your first playlist</button>
+        <div>
+            <a href="#">Legal</a>
+            <a href="#">Privacy Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">About Ads</a>
+            <a href="#">Accessibility</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Popular artists</h1>
+        <div class="popular-artists">
+            <div class="artist">
+                <img src="https://via.placeholder.com/150" alt="Pritam">
+                <p>Pritam</p>
+            </div>
+            <div class="artist">
+                <img src="https://via.placeholder.com/150" alt="Arijit Singh">
+                <p>Arijit Singh</p>
+            </div>
+            <div class="artist">
+                <img src="https://via.placeholder.com/150" alt="A.R. Rahman">
+                <p>A.R. Rahman</p>
+            </div>
+            <div class="artist">
+                <img src="https://via.placeholder.com/150" alt="Vishal Mishra">
+                <p>Vishal Mishra</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
